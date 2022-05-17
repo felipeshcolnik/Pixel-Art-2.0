@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  background-color: grey;
+  text-align: center;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 50px;
+  color: white;
+  padding: 20px;
+  background-color: #4CAF50;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+}
+
+footer {
+  
+  color: white;
+  padding: 25px;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 10px;
+  display: fixed;
+}
