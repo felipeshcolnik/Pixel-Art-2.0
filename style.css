@@ -57,3 +57,10 @@ footer {
   padding: 20px;
   margin: 0 5px;
 }
+
+.board-frame {
+  display: inline;
+  border: solid 1px black;
+  padding: 3px 10px 3px 10px;
+  background-color: white;  
+}
