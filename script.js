@@ -1,5 +1,6 @@
 window.onload = function() {
   createColorOptions(numberOfColors);
+  randomizeRGB();
   createSizeofBoard(numbOfFrames);
   clearBoard();
 };
@@ -12,8 +13,16 @@ function createColorOptions(numberOfColors) {
   for (let i = 0; i < numberOfColors; i += 1) {
     const div = document.createElement('div');
     div.className = 'color-palette';
+    div.style.backgroundColor = randomizeRGB();
     divMae.appendChild(div);
   };
+};
+
+const randomizeRGB = () => {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r}, ${g}, ${b})`;
 };
 
 function createSizeofBoard(numbOfFrames) {
@@ -29,7 +38,6 @@ function createSizeofBoard(numbOfFrames) {
     };
     const br = document.createElement('br');
     divMae.appendChild(br);
-
   };
 };
 
