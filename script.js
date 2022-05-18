@@ -1,6 +1,7 @@
 window.onload = function() {
   createColorOptions(numberOfColors);
   randomizeRGB();
+  changePaletteColors();
   createSizeofBoard(numbOfFrames);
   clearBoard();
 };
@@ -23,6 +24,16 @@ const randomizeRGB = () => {
   const g = Math.floor(Math.random() * 256);
   const b = Math.floor(Math.random() * 256);
   return `rgb(${r}, ${g}, ${b})`;
+};
+
+const changePaletteColors = () => {
+  const changePaletteColorsButton = document.getElementById('change-colors-button');
+  changePaletteColorsButton.addEventListener('click', () => {
+    const paleteColorsList = document.getElementsByClassName('color-palette');
+    for (let i = 0; i < paleteColorsList.length; i += 1) {
+      paleteColorsList[i].style.backgroundColor = randomizeRGB();
+    };
+  });
 };
 
 function createSizeofBoard(numbOfFrames) {
