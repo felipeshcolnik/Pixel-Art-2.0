@@ -18,6 +18,7 @@ function createColorOptions(numberOfColors) {
     div.style.backgroundColor = randomizeRGB();
     divMae.appendChild(div);
   };
+  document.querySelector('.color-palette').classList.add('active-color');
 };
 
 const randomizeRGB = () => {
