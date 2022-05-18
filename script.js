@@ -3,6 +3,7 @@ window.onload = function() {
   randomizeRGB();
   changePaletteColors();
   createSizeofBoard(numbOfFrames);
+  changeBoardSize();
   clearBoard();
 };
 
@@ -50,6 +51,23 @@ function createSizeofBoard(numbOfFrames) {
     const br = document.createElement('br');
     divMae.appendChild(br);
   };
+};
+
+const deleteBoard = () => {
+  const board = document.getElementsByClassName('board-area')[0];
+  for (let i = 0; i < board.childNodes.length; i +=0) {
+    board.removeChild(board.childNodes[0]);
+  }
+}
+
+const changeBoardSize = () => {
+  const changeBoardSizeButton = document.getElementById('change-board-size');
+  const inputSize = document.getElementById('pixel-area-range');
+  changeBoardSizeButton.addEventListener('click', () => {
+    deleteBoard();
+    createSizeofBoard(inputSize.value);
+    inputSize.value = '';
+  });
 };
 
 const clearBoard = () => {
