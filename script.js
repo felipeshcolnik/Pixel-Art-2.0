@@ -43,7 +43,7 @@ function createSizeofBoard(numbOfFrames) {
     const pCol = document.createElement('p');
     pCol.className = 'board-frame';
     divMae.appendChild(pCol);
-    for (let i = 0; i < numbOfFrames; i += 1) {
+    for (let i = 0; i < numbOfFrames - 1; i += 1) {
       const pLin = document.createElement('p');
       pLin.className = 'board-frame';
       divMae.appendChild(pLin);
