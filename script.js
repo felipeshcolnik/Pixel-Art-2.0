@@ -2,6 +2,7 @@ window.onload = function() {
   createColorOptions(numberOfColors);
   randomizeRGB();
   changePaletteColors();
+  selectedColor();
   createSizeofBoard(numbOfFrames);
   changeBoardSize();
   clearBoard();
@@ -36,6 +37,17 @@ const changePaletteColors = () => {
       paleteColorsList[i].style.backgroundColor = randomizeRGB();
     };
   });
+};
+
+const selectedColor = () => {
+  const colorList = document.getElementsByClassName('color-palette');
+  for (let i = 0; i < colorList.length; i += 1) {
+    colorList[i].addEventListener('click', () => {
+      const activeColor = document.getElementsByClassName('active-color');
+      activeColor[0].classList.remove('active-color');
+      colorList[i].classList.add('active-color');
+    });
+  };
 };
 
 function createSizeofBoard(numbOfFrames) {
