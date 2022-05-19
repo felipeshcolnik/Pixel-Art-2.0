@@ -79,8 +79,6 @@ const paintingBoard = () => {
   for (let i = 0; i < pixel.length; i += 1) {
     pixel[i].addEventListener('click', () => {
       pixel[i].style.backgroundColor = document.querySelector('.active-color').style.backgroundColor;
-      const classSelectedColor = window.querySelector('.active-color').style.backgroundColor;
-      this.style.backgroundColor = classSelectedColor;
     });
   }
 }
