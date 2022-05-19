@@ -4,6 +4,40 @@
   text-align: center;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4CAF50;
+}
+
+.header-link {
+  background-color:#4CAF50;
+}
+
+h1 {
+  background-color: #4CAF50;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 50px;
+  color: white;
+  padding: 20px;
+}
+
+#back_icon {
+  background-color: #4CAF50;
+  height: 2em;
+  width: 2em;
+  margin-left: 40px;
+}
+
+#gitHub_icon {
+  background-color: #4CAF50;
+  width: 2em;
+  height: 2em;
+  margin-right: 40px;
+}
+
 button {
   background-color: #4CAF50;
   color: white;
@@ -19,14 +53,6 @@ button {
   margin: auto;
 }
 
-h1 {
-  text-align: center;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 50px;
-  color: white;
-  padding: 20px;
-  background-color: #4CAF50;
-}
 
 h2 {
   text-align: center;
@@ -34,6 +60,7 @@ h2 {
   font-size: 30px;
   color: white;
   padding: 20px;
+  display: block;
 }
 
 footer {
@@ -55,6 +82,11 @@ footer {
   font-size: 20px;
   padding: 20px;
   margin: 0 5px;
+}
+
+.color-palette-list {
+  display: flex;
+  align-items: center;
 }
 
 .board-frame {
