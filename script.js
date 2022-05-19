@@ -3,8 +3,8 @@ window.onload = function() {
   randomizeRGB();
   changePaletteColors();
   selectedColor();
-  paintingBoard();
   createSizeofBoard(numbOfFrames);
+  paintingBoard();
   changeBoardSize();
   clearBoard();
 };
@@ -76,9 +76,10 @@ const deleteBoard = () => {
 
 const paintingBoard = () => {
   const pixel = document.getElementsByClassName('board-frame');
+  const colorSelected = document.querySelector('.active-color').style.backgroundColor;
   for (let i = 0; i < pixel.length; i += 1) {
     pixel[i].addEventListener('click', () => {
-      pixel[i].style.backgroundColor = document.querySelector('.active-color').style.backgroundColor;
+      pixel[i].style.backgroundColor = colorSelected;
     });
   }
 }
