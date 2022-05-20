@@ -88,9 +88,13 @@ const changeBoardSize = () => {
   const changeBoardSizeButton = document.getElementById('change-board-size');
   const inputSize = document.getElementById('pixel-area-range');
   changeBoardSizeButton.addEventListener('click', () => {
-    deleteBoard();
-    createSizeofBoard(inputSize.value);
-    inputSize.value = '';
+    if (inputSize.value < 5 || inputSize.value > 50) {
+      alert('Please select a number betwen 5 and 50')
+    } else {
+      deleteBoard();
+      createSizeofBoard(inputSize.value);
+      inputSize.value = '';
+    }
   });
 };
 

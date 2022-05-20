@@ -51,6 +51,9 @@ button {
 
 #change-colors-button {
   margin: auto;
+  display: inline-block;
+  align-items: center;
+  align-content: center;
 }
 
 
@@ -76,17 +79,21 @@ footer {
   width: 1px;
   height: 1px;
   border-radius: 100%;
-  display: inline-block;
   text-align: center;
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 20px;
   padding: 20px;
   margin: 0 5px;
+  flex-direction: row;
+  display: inline-block;
+  align-items: center;
+  align-content: center;
 }
 
 .color-palette-list {
   display: flex;
   align-items: center;
+  align-content: center;
 }
 
 .board-frame {
