@@ -97,6 +97,8 @@ footer {
 }
 
 .board-frame {
+  height: 40px;
+  width: 40px;
   display: inline;
   border: solid 1px black;
   padding: 3px 10px 3px 10px;
